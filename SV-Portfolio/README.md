@@ -56,7 +56,7 @@ Save its preview in `public/certificates/` and add to `certificates`:
 { title: 'Certificate title', issuer: 'Actual issuer', date: '2026', image: '/certificates/certificate.jpg', url: '', file: '/certificates/certificate.pdf' }
 ```
 
-Use the real verification URL when available. Remove `file` if no PDF exists. Portrait/certificate arrays are currently empty because these files have not been supplied.
+Use the real verification URL when available. Remove `file` if no PDF exists. Portraits can be added to the photo gallery when supplied. NCC certificates are listed in both Achievements and the certificate gallery.
 
 ### Add results
 

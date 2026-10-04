@@ -5,8 +5,44 @@
 @media(max-width:1150px){.nav{height:64px;padding:0 5%;gap:20px}.brand-mark{font-size:26px}.navlinks{display:none}.navlinks.open{display:grid;grid-template-columns:repeat(2,1fr);gap:0 15px;top:63px;left:0;right:0;position:absolute;max-height:calc(100dvh - 64px);overflow-y:auto;padding:20px;background:#080d14fa;border-bottom:1px solid #00e5ff33}.navlinks a{font-size:13px;padding:13px 14px}.navlinks a.active:after{display:none}.nav-actions{margin-left:auto;gap:12px}.nav-contact{display:flex}.mobile-toggle{display:inline-flex!important}.command-button{display:flex}.portrait-pending{gap:35px;padding:30px}.portrait-pending h3{font-size:31px}.photo-passion-tags{gap:9px}.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.portrait-pending{grid-template-columns:1fr;gap:30px;padding:27px}.portrait-placeholder{max-width:300px;width:100%;aspect-ratio:4/3;margin:auto}.portrait-pending h3{font-size:30px}.portrait-pending .eyebrow{font-size:11px}.portrait-pending p{font-size:16px}.photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.photo-tile h3{font-size:19px}.photo-tile p{font-size:13px}.project-view-tabs{gap:3px;margin:20px 0}.project-view-tabs>button{padding:10px 7px;font-size:12px}.result-media-frame figcaption{padding:17px}.result-media-frame h3{font-size:18px}.result-media-frame figcaption p{font-size:13px!important}.source-files>a{padding:15px;gap:11px}.source-files>a>span{font-size:13px}.project-evidence-notes{font-size:14px}.results-empty{padding:25px 18px;min-height:210px}.results-empty p{font-size:14px!important}.project-persistent-links .button{font-size:12px}.certificate-card>h3{font-size:18px}.certificate-card>p{font-size:12px}.certificate-view{font-size:12px}.modal-photo .modal-content{padding:20px}}
 @media(max-width:480px){.nav-contact{display:none}.portrait-pending{padding:24px}.portrait-placeholder{aspect-ratio:4/4}.portrait-pending h3{font-size:29px}.photo-gallery,.certificate-grid{grid-template-columns:1fr}.photo-tile h3{font-size:22px}.photo-tile p{font-size:14px}.photo-passion-tags{gap:8px}.photo-passion-tags span{font-size:11px;padding:7px 10px}.certificate-card>h3{font-size:21px}.certificate-card>p{font-size:14px}.project-view-tabs>button{font-size:11px}.source-files>a>span{font-size:13px}.project-source-link{font-size:12px}.photo-lightbox figcaption{font-size:14px}}
-@media(prefers-reduced-motion:reduce){.animated-title .title-word-mask>span{transform:none!important;opacity:1!important;filter:none!important;will-change:auto}.section-heading .animated-title:after,.portrait-placeholder>svg,.portrait-placeholder:after{animation:none}.photo-frame img,.photo-open,.project-real-media img,.certificate-card>img{transition:none}.photo-tile:hover img,.photo-tile:hover .photo-open,.project-card:hover .project-real-media img,.certificate-card:hover>img{transform:none}}
+@media(prefers-reduced-motion:reduce){.animated-title .title-word-mask>span{transform:none!important;opacity:1!important;filter:none!important;will-change:auto}.photo-tile,.certificate-card,.ncc-achievement{transform:none!important;opacity:1!important}.section-heading .animated-title:after,.portrait-placeholder>svg,.portrait-placeholder:after{animation:none}.photo-frame img,.photo-open,.project-real-media img,.certificate-card>img{transition:none}.photo-tile:hover img,.photo-tile:hover .photo-open,.project-card:hover .project-real-media img,.certificate-card:hover>img{transform:none}}
 
 .result-media-frame .result-image-title{padding:20px 22px;margin:0;border-bottom:1px solid #2a4a5a;}
 
 .ncc-achievement{display:grid;grid-template-columns:1fr minmax(180px,300px);gap:32px;align-items:center;border:1px solid #264658;padding:28px;margin:28px 0;border-radius:12px;background:#0b1721}.ncc-achievement img{width:100%;max-height:380px;object-fit:contain}.ncc-achievement h3{font-size:28px}.ncc-achievement p{line-height:1.8}@media(max-width:600px){.ncc-achievement{grid-template-columns:1fr}}
+
+.project-real-media img,.photo-frame img,.certificate-card>img,.ncc-achievement img,.photo-lightbox>img{animation:portfolio-image-energy 7s ease-in-out infinite}
+@keyframes portfolio-image-energy{0%,100%{filter:brightness(1) saturate(.96) drop-shadow(0 0 0 #00e5ff00)}50%{filter:brightness(1.045) saturate(1.04) drop-shadow(0 0 5px #00e5ff38)}}
+.section-heading .animated-title,.hero h1,.project-detail h3,.photo-tile h3,.certificate-card>h3,.ncc-achievement h3,.portrait-pending h3{animation:portfolio-title-energy 5s ease-in-out infinite}
+@keyframes portfolio-title-energy{0%,100%{text-shadow:0 0 0 #00e5ff00}50%{text-shadow:0 0 12px #00e5ff42,0 0 22px #ff596b18}}
+.hero .reactor{animation:reactor-energy 6s ease-in-out infinite}
+.hero .reactor-grid{animation:reactor-grid-pulse 4.5s ease-in-out infinite}
+.hero .reactor-ticks{animation:rotate 90s linear infinite}
+.hero .reactor-inner{animation:reactor-inner-glow 5s ease-in-out infinite}
+.hero .core{animation:reactor-core-pulse 4s ease-in-out infinite}
+.hero .hud-label{animation:hud-label-flicker 6s ease-in-out infinite}
+.hero .hud-b{animation-delay:-2.5s}.hero .hud-c{animation-delay:-1.5s}.hero .hud-d{animation-delay:-4s}
+.hero .crosshair{animation:crosshair-scan 5.5s ease-in-out infinite}
+.hero .crosshair.c2{animation-delay:-2.75s}
+.hero .hero-grid{animation:hero-grid-breathe 8s ease-in-out infinite}
+.hero .hero-topline>span:first-child i{animation:hud-status-glow 3s ease-in-out infinite}
+.hero .hero-bottom{animation:hud-edge-glow 6s ease-in-out infinite}
+.hero .reactor{cursor:pointer}
+.hero .reactor:focus-visible{outline:2px solid #00e5ff;outline-offset:8px;border-radius:50%}
+.hero .reactor:after{content:"CLICK TO NAVIGATE";position:absolute;left:50%;bottom:6%;transform:translate(-50%,8px);padding:4px 9px;border:1px solid #00e5ff45;border-radius:3px;background:#06131bd9;color:#83edfc;font:600 8px/1.4 var(--font-display,sans-serif);letter-spacing:1.2px;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;white-space:nowrap}
+.hero .reactor:hover:after,.hero .reactor:focus-visible:after{opacity:1;transform:translate(-50%,0)}
+.tech-sphere-labels{position:absolute;inset:0;pointer-events:none;z-index:1}
+.tech-sphere-label{position:absolute;display:flex;flex-direction:column;align-items:center;gap:3px;transform:translate(-50%,-50%);color:#a9e9f4;text-shadow:0 0 8px #00d9f044;white-space:nowrap;transition:opacity .12s linear}
+.tech-sphere-label>span{display:grid;place-items:center;min-width:22px;height:22px;padding:0 3px;border:1px solid #00d9f06e;border-radius:50%;background:#06131bbc;color:#7ceeff;font:600 9px/1 var(--font-display,sans-serif);box-shadow:0 0 10px #00d9f026}
+.tech-sphere-label>small{font-size:8px;line-height:1.2;color:#a9c6d0}
+@keyframes reactor-energy{0%,100%{filter:drop-shadow(0 0 24px #00e5ff0a)}50%{filter:drop-shadow(0 0 36px #00e5ff20) drop-shadow(0 0 12px #ff596b0a)}}
+@keyframes reactor-grid-pulse{0%,100%{opacity:.45}50%{opacity:.9}}
+@keyframes reactor-inner-glow{0%,100%{box-shadow:0 0 22px #00e5ff1f,inset 0 0 45px #00e5ff16}50%{box-shadow:0 0 32px #00e5ff35,inset 0 0 55px #00e5ff25}}
+@keyframes reactor-core-pulse{0%,100%{box-shadow:0 0 35px #00e5ff12,inset 0 0 32px #00e5ff14}50%{box-shadow:0 0 50px #00e5ff38,inset 0 0 44px #00e5ff2b}}
+@keyframes hud-label-flicker{0%,100%{filter:brightness(.88);text-shadow:0 0 0 #00e5ff00}48%,55%{filter:brightness(1.16);text-shadow:0 0 9px #00e5ff55}}
+@keyframes crosshair-scan{0%,100%{opacity:.22;filter:drop-shadow(0 0 0 #00e5ff00)}50%{opacity:.8;filter:drop-shadow(0 0 5px #00e5ff50)}}
+@keyframes hero-grid-breathe{0%,100%{opacity:.45}50%{opacity:.82}}
+@keyframes hud-status-glow{0%,100%{text-shadow:0 0 3px #00e5ff30}50%{text-shadow:0 0 10px #00e5ffbb}}
+@keyframes hud-edge-glow{0%,100%{border-color:#ffffff0b}50%{border-color:#00e5ff24}}
+@media(prefers-reduced-motion:reduce){.hero .reactor{animation:reactor-energy 6s ease-in-out infinite!important}.hero .reactor-grid{animation:reactor-grid-pulse 4.5s ease-in-out infinite!important}.hero .orbit-one{animation:rotate 42s linear infinite!important}.hero .orbit-two{animation:rotate 15s linear infinite!important}.hero .orbit-three{animation:rotate 19s linear infinite reverse!important}.hero .reactor-ticks{animation:rotate 38s linear infinite!important}.hero .inner-circle{animation:rotate 13s linear infinite!important}.hero .reactor-inner{animation:reactor-inner-glow 5s ease-in-out infinite!important}.hero .core{animation:reactor-core-pulse 4s ease-in-out infinite!important}.hero .hud-label{animation:hud-label-flicker 6s ease-in-out infinite!important}.hero .crosshair{animation:crosshair-scan 5.5s ease-in-out infinite!important}.hero .hero-grid{animation:hero-grid-breathe 8s ease-in-out infinite!important}}
+@media(prefers-reduced-motion:reduce){.project-real-media img,.photo-frame img,.certificate-card>img,.ncc-achievement img,.photo-lightbox>img,.section-heading .animated-title,.hero h1,.project-detail h3,.photo-tile h3,.certificate-card>h3,.ncc-achievement h3,.portrait-pending h3{animation:none}}
