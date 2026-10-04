@@ -1,0 +1,2 @@
+Import this folder as a Next.js project in Vercel, or run npx vercel from this folder after signing in. The Vercel workspace URL is https://vercel.com/sv-e511 — it is not a public demo URL. After deployment, set the portfolio demo field in content/portfolio.ts to the returned production URL.
+The MFA screenshot 115329 is excluded because it exposes an authenticator secret and QR code.

@@ -1,0 +1,16 @@
+SV PORTFOLIO — OPEN IN VS CODE (WINDOWS)
+
+1. Install Node.js 22.13 or newer.
+2. Extract this entire ZIP. Do not run files inside the ZIP viewer.
+3. Open VS Code > File > Open Folder > select the extracted SV-Portfolio folder.
+4. Choose Terminal > New Terminal.
+5. Run: npm.cmd ci
+6. Run: npm.cmd run dev
+7. Open http://localhost:3000 in your browser.
+
+Keep the terminal open. Press Ctrl+C to stop. If port 3000 is busy, use the address printed by Next.js.
+
+The .cmd suffix avoids PowerShell npm.ps1 execution-policy errors.
+On macOS/Linux use npm instead of npm.cmd.
+
+See README.md for editing photos, certificates, projects and links.
